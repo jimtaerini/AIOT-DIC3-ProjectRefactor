@@ -10,11 +10,11 @@
 
 所有文件都放在 [`myplan/`](myplan/) 資料夾：
 
-| 文件 | 內容 | 原始檔 |
-|---|---|---|
-| [1. AI SOC 代理分析](myplan/1.AI%20SOC%20代理分析.md) | 依《期末專題提案作業規範》與 A2Z 26 字母 SOP 對照解析專題架構 | [PDF](myplan/1.AI%20SOC%20代理分析.pdf) |
-| [2. AI SOC Analyst Agent 資安專題總覽](myplan/2.AI%20SOC%20Analyst%20Agent%20資安專題總覽.md) | 專題總覽圖的文字版（架構、流程、演算法、評估） | [PNG](myplan/2.AI%20SOC%20Analyst%20Agent%20資安專題總覽.png) |
-| [3. AI SOC 代理摘要](myplan/3.AI%20SOC%20代理摘要.md) | A–F 六段式摘要（約 500 字）與學術定位 | [PDF](myplan/3.AI%20SOC%20代理摘要.pdf) |
+| 文件 | 內容 |
+|---|---|
+| [1. AI SOC 代理分析](myplan/1.AI%20SOC%20代理分析.md) | 依《期末專題提案作業規範》與 A2Z 26 字母 SOP 對照解析專題架構 |
+| [2. AI SOC Analyst Agent 資安專題總覽](myplan/2.AI%20SOC%20Analyst%20Agent%20資安專題總覽.md) | 專題總覽圖（[PNG](myplan/2.AI%20SOC%20Analyst%20Agent%20資安專題總覽.png)）與其文字版（架構、流程、演算法、評估） |
+| [3. AI SOC 代理摘要](myplan/3.AI%20SOC%20代理摘要.md) | A–F 六段式摘要（約 500 字）與學術定位 |
 
 ## 系統架構（8 大模組）
 
