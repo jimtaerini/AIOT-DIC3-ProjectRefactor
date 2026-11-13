@@ -3,6 +3,10 @@
 > 狀態：**Proposal 階段**（v0.8）。本文件從 Proposal 開始建立並隨開發持續更新。
 > 文中的文獻編號（例如 [3]）對應 [`docs/proposal.md`](docs/proposal.md) §6 References。
 > 標示「（規劃）」的項目尚未實作；標示「（待確認）」的項目需在下載資料或實作後驗證。
+>
+> **OpenSpec 工作流程**：本文件已轉換為 OpenSpec 變更 [`openspec/changes/build-soc-triage-agent/`](openspec/changes/build-soc-triage-agent/)：
+> §1–§2 → `proposal.md` 與 `specs/`（7 個能力的 Requirement / Scenario）；§3–§9、§14 → `design.md`；§11–§12 的實作與時程 → `tasks.md`。
+> 之後的需求變更請先在 OpenSpec 建立 change（`/openspec-propose`），再同步回本文件。
 
 ## 目錄
 

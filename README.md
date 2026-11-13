@@ -6,9 +6,51 @@
 
 ![AI SOC Analyst Agent 資安專題總覽](myplan/2.AI%20SOC%20Analyst%20Agent%20資安專題總覽.png)
 
-## 專題文件
+## 核心文件
 
-所有文件都放在 [`myplan/`](myplan/) 資料夾：
+| 文件 | 內容 |
+|---|---|
+| [docs/project-core.md](docs/project-core.md) | 一頁整理：Abstract A–F、5 個核心思維（M1–M5）、3 個取捨（T1–T3）、10 個深度問題 |
+| [docs/proposal.md](docs/proposal.md) | 完整 Proposal；Introduction 依 A2Z G–L、Related Work 依 M–O 重構 |
+| [DESIGN.md](DESIGN.md) | 系統設計文件（v0.8），已轉換為下方的 OpenSpec 變更 |
+
+## OpenSpec 工作流程（Spec-Driven Development）
+
+本專題以 [OpenSpec](https://github.com/Fission-AI/OpenSpec) 管理規格：先寫規格（WHAT），再寫設計（HOW）與任務，最後實作並封存。
+
+```
+openspec/
+├── config.yaml                          # 專案脈絡與語言設定
+├── specs/                               # 封存後的主規格（目前為空）
+└── changes/build-soc-triage-agent/      # 由 DESIGN.md 轉換的變更
+    ├── proposal.md                      # Why / What Changes / 7 個 Capabilities
+    ├── specs/<capability>/spec.md       # Requirement + Scenario（WHEN / THEN）
+    ├── design.md                        # 架構、流程圖、Algorithm 1–2、決策與風險
+    └── tasks.md                         # W1–W6 實作任務（含驗證方式）
+```
+
+| Capability | 對應 DESIGN.md | 核心思維 |
+|---|---|---|
+| `triage-request` | ② Input、FR1、FR6 | — |
+| `evidence-gathering` | ③④ Planner / Retrieval | M1 |
+| `triage-classification` | ⑤ Analytics | M2、M4 |
+| `attack-mapping` | ⑥ Domain Knowledge、R1–R5 | M2、M4 |
+| `triage-decision` | ⑦ Evidence Fusion & Escalation | M3、M5 |
+| `triage-report` | ⑧ Output & Feedback | M5 |
+| `triage-evaluation` | §10 Evaluation Plan | T1–T3 |
+
+常用指令（需先安裝 Node.js 與 `npm install -g @fission-ai/openspec`）：
+
+```bash
+openspec list                                       # 列出進行中的變更與任務進度
+openspec show build-soc-triage-agent                # 檢視變更內容
+openspec validate build-soc-triage-agent --strict   # 驗證規格格式
+openspec archive build-soc-triage-agent             # 任務完成後封存並合併到主規格
+```
+
+## 原始規劃文件
+
+[`myplan/`](myplan/) 資料夾：
 
 | 文件 | 內容 |
 |---|---|

@@ -5,6 +5,12 @@ context: |
   All artifacts must be written in zh-TW.
   Keep OpenSpec structural headings and SHALL/MUST keywords in English.
 
+  Project: AI SOC Analyst Agent. 結合 ML 分級（GBDT + SHAP）、MITRE ATT&CK 領域知識與 LLM 推理（ReAct），
+  對資安事件做 TP / BP / FP 分級，並在信心不足、結論衝突、高風險或證據不足時升級給人工。
+  Core principles: docs/project-core.md（A–F、M1–M5 五個核心思維、T1–T3 三個取捨、十個深度問題）。
+  Data: Microsoft GUIDE（欄位多為匿名化 ID）、ExCyTIn-Bench。Primary metric: TP 漏判率，並同時報告人工升級率。
+  Citation numbers like [3] refer to docs/proposal.md §6 References.
+
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
 # Example:
